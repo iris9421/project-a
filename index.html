@@ -1,0 +1,89 @@
+<!-- 
+Template for IMA's Creative Coding Lab 
+
+Project A: Generative Creatures
+CCLaboratories Biodiversity Atlas 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>[ WE ]</title>
+
+    <!-- allow special characters, including Arabic, Chinese, Korean, Japanese, etc. -->
+    <meta charset="UTF-8">
+    <!-- link the style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- import p5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js"></script>
+    <script>
+        // prevent scrolling when spacebar and arrow keys are pressed.
+        window.addEventListener("keydown", function (e) { if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) { e.preventDefault(); } }, false);
+    </script>
+</head>
+
+<body>
+    <!-- title -->
+    <div id="title-wrapper">
+        <h1 class="headline black">[ WE ]</h1>
+    </div>
+
+    <!-- main content -->
+    <div id="main-wrapper">
+        <main>
+            <!-- This is where your p5 sketch will be appended and appear! -->
+        </main>
+        <div class="two-columns">
+            <div class="left">
+                <h3 class="red">Scientific Name:</h3>
+                <p>Living Particle</p>
+
+                <h3 class="red">Discovered by / at:</h3>
+                <p>Iris Wang, 2026Fall</p>
+
+                <h3 class="green">Family:</h3>
+                <p>Proton, neutron, electron; Planets, galaxy, nebula(all celestial body); your friends, your family.</p>
+            </div>
+            <div class="right">
+                <h3 class="green">Habitat:</h3>
+                <p>Cell, universe, human society, or your home.</p>
+
+                <h3 class="green">Appearance:</h3>
+                <p>Changing between a dark dot (symbolizing atom), the Earth, and a human face.</p>
+
+                <h3 class="green">Key Characteristics:</h3>
+                <ul>
+                    <li>Keep changing appearance.</li>
+                    <li>Actively react to users’ action.</li>
+                    <li>Actively respond to environment’s changes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="one-column">
+            <p>
+                <span class="yellow">WE is a living particle that exists across different scales, from atoms and celestial bodies to human life. Its appearance constantly changes, and it actively responds to both its environment and the actions of the user.
+                <br>
+                <span class="yellow">When the user controls the creature with the mouse, it can move and collide with other circles in the environment. After the collision, the white and blue circles will react by shaking, changing color, or shifting their original positions. This interaction will show how one action can affect not only the creature itself but also the environment around it.
+</span> This text can double as
+                fictional part of your story, but could also include instructional aspects on how to interact with your
+                sketch above.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="black">
+        <p>A CCLab project made by Iris in 2026Fall</p>
+    </div>
+
+    <!-- Home: Link back to the ATLAS page-->
+    <div id="home">
+        <a href="https://cclab.work/atlas">Back to the ATLAS</a>
+    </div>
+
+    <!-- Include your sketch.js file here -->
+    <script src="sketch.js" type="text/javascript"> </script>
+</body>
+
+</html>
